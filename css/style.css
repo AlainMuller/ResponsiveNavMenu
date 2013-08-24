@@ -1,0 +1,44 @@
+/* On applique box-sizing: border-box à tous les éléments pour faciliter le redimensionnement des objets */
+* {
+    padding: 0;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Centrage du menu de navigation */
+nav {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* Suppression des boutons de la liste */
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    float: left;
+    width: 16.6%;
+    padding: 10px;
+
+    background: #444;
+    border-right: 1px solid #fff;
+
+    color: #fff;
+    font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* SMALL */
+nav small {
+    color: #aaa;
+    font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
+    text-transform: none;
+}
