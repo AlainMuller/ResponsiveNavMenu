@@ -1,5 +1,6 @@
 body {
     background-color: #494949;
+    font-size: 16px;
 }
 
 /* Centrage vertical du menu */
@@ -72,6 +73,12 @@ body {
     -o-transition: background 0.5s ease;
     -ms-transition: background 0.5s ease;
     transition: background 0.5s ease;
+
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 }
 
 a.menuitem:hover {
@@ -140,11 +147,10 @@ nav li:nth-child(6) a {
     }
 
     .menuitem {
+        height: 6em;
         width: 25%;
         margin: 2%;
         font-size: 2em;
-        padding-top: 41px;
-        padding-bottom: 20px;
     }
 
     .menuitem span {
@@ -197,7 +203,7 @@ nav li:nth-child(6) a {
 }
 
 /* HD Tablet landscape */
-@media only screen and (max-width : 1024px) and (orientation:landscape) , only screen and (max-device-width : 1024) and (orientation:landscape) {
+@media only screen and (max-width : 1024px) and (orientation:landscape) , only screen and (max-device-width : 1024px) and (orientation:landscape) {
     #menu {
         width: 90%;
     }
@@ -262,7 +268,7 @@ nav li:nth-child(6) a {
 }
 
 /* Middle Phone portrait */
-@media only screen and (max-width : 480px) and (orientation:portrait) , only screen and (max-device-width : 480) and (orientation:portrait) {
+@media only screen and (max-width : 480px) and (orientation:portrait) , only screen and (max-device-width : 480px) and (orientation:portrait) {
     #menu {
         width: 90%;
     }
