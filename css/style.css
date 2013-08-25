@@ -68,11 +68,11 @@ body {
     border-radius: 7px;
 
     /* Transitions */
-    -webkit-transition: background 0.5s ease;
-    -moz-transition: background 0.5s ease;
-    -o-transition: background 0.5s ease;
-    -ms-transition: background 0.5s ease;
-    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease !important;
+    -moz-transition: background 0.5s ease !important;
+    -o-transition: background 0.5s ease !important;
+    -ms-transition: background 0.5s ease !important;
+    transition: background 0.5s ease !important;
 
     -webkit-transition: color 0.5s ease;
     -moz-transition: color 0.5s ease;
