@@ -55,7 +55,7 @@ body {
     background: #444;
     margin: 15px;
 
-    color: #fff;
+    color: whitesmoke;
     font: 12px 'Oswald', Helvetica, Verdana, Arial, sans-serif;
     text-align: center;
     text-decoration: none;
@@ -83,7 +83,7 @@ body {
 
 a.menuitem:hover {
     padding: 10px;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -303,6 +303,19 @@ nav li:nth-child(6) a {
         width: 40%;
         margin: 5%;
         font-size: 1.3em;
+    }
+}
+
+/* Very Old Phone portrait */
+@media only screen and (max-width : 240px) and (orientation:portrait) , only screen and (max-device-width : 240px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40% !important;
+        margin: 5% !important;
+        font-size: 1em !important;
     }
 }
 
