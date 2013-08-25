@@ -2,7 +2,6 @@ body {
     background-color: #494949;
 }
 
-
 /* Centrage vertical du menu */
 .mainContainer {
     position: absolute;
@@ -18,6 +17,7 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    width: 100%;
 }
 
 /* On applique box-sizing: border-box à tous les éléments pour faciliter le redimensionnement des objets */
@@ -33,7 +33,7 @@ body {
 /* Centrage horizontal du menu de navigation */
 #menu {
     text-align: center;
-    display: inline;
+    display: block;
     width: 90%;
     margin: 50px auto;
 }
@@ -75,6 +75,7 @@ body {
 }
 
 a.menuitem:hover {
+    padding: 10px;
     color: black;
     text-decoration: none;
 }
@@ -132,8 +133,31 @@ nav li:nth-child(6) a {
 /* Media queries */
 /* ************* */
 
+/* HDTV landscape */
+@media only screen and (min-width : 1281px) and (orientation:landscape) {
+    #menu {
+        width: 60%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 2%;
+        font-size: 2em;
+        padding-top: 41px;
+        padding-bottom: 20px;
+    }
+
+    .menuitem span {
+        display: none;
+    }
+
+    a.menuitem:hover span {
+        display: block;
+    }
+}
+
 /* HDTV portrait */
-@media only screen and (max-width : 1080px) and (orientation:portrait) , only screen and (max-device-width : 1080px) and (orientation:portrait) {
+@media only screen and (max-width : 1080px) and (orientation:portrait), only screen and (max-device-width : 1080px) and (orientation:portrait) {
     #menu {
         width: 66%;
     }
@@ -145,15 +169,15 @@ nav li:nth-child(6) a {
     }
 }
 
-/* HDTV landscape */
-@media only screen and (max-width : 1920px) and (orientation:landscape) , only screen and (max-device-width : 1920px) and (orientation:landscape) {
+/* WideScreen landscape */
+@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
     #menu {
-        width: 60%;
+        width: 80%;
     }
 
     .menuitem {
-        width: 25%;
-        margin: 2%;
+        width: 27%;
+        margin: 3%;
         font-size: 2em;
     }
 }
@@ -169,17 +193,18 @@ nav li:nth-child(6) a {
         margin: 5%;
         font-size: 1.5em;
     }
+
 }
 
-/* WideScreen landscape */
-@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+/* HD Tablet landscape */
+@media only screen and (max-width : 1024px) and (orientation:landscape) , only screen and (max-device-width : 1024) and (orientation:landscape) {
     #menu {
-        width: 80%;
+        width: 90%;
     }
 
     .menuitem {
-        width: 27%;
-        margin: 3%;
+        width: 25%;
+        margin: 4%;
         font-size: 2em;
     }
 }
@@ -197,9 +222,8 @@ nav li:nth-child(6) a {
     }
 }
 
-
-/* HD Tablet landscape */
-@media only screen and (max-width : 1024px) and (orientation:landscape) , only screen and (max-device-width : 1024) and (orientation:landscape) {
+/* Small Tablet landscape */
+@media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
     #menu {
         width: 90%;
     }
@@ -224,7 +248,7 @@ nav li:nth-child(6) a {
     }
 }
 
-/* Small Tablet landscape */
+/* Middle Phone landscape */
 @media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
     #menu {
         width: 90%;
@@ -250,8 +274,8 @@ nav li:nth-child(6) a {
     }
 }
 
-/* Middle Phone landscape */
-@media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
+/* Small Phone landscape */
+@media only screen and (max-width : 480px) and (orientation:landscape) , only screen and (max-device-width : 480px) and (orientation:landscape) {
     #menu {
         width: 90%;
     }
@@ -259,7 +283,7 @@ nav li:nth-child(6) a {
     .menuitem {
         width: 25%;
         margin: 4%;
-        font-size: 2em;
+        font-size: 1.3em;
     }
 }
 
@@ -272,19 +296,6 @@ nav li:nth-child(6) a {
     .menuitem {
         width: 40%;
         margin: 5%;
-        font-size: 1.3em;
-    }
-}
-
-/* Small Phone landscape */
-@media only screen and (max-width : 480px) and (orientation:landscape) , only screen and (max-device-width : 480px) and (orientation:landscape) {
-    #menu {
-        width: 90%;
-    }
-
-    .menuitem {
-        width: 25%;
-        margin: 4%;
         font-size: 1.3em;
     }
 }
@@ -302,6 +313,20 @@ nav li:nth-child(6) a {
     }
 }
 
+/* Nexus 4 landscape */
+
+@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+    #menu {
+        width: 80%;
+    }
+
+    .menuitem {
+        width: 27%;
+        margin: 3%;
+        font-size: 1.3em;
+    }
+}
+
 /* Nexus 4 portrait */
 @media only screen and (max-width : 768px) and (orientation:portrait) , only screen and (max-device-width : 768px) and (orientation:portrait) {
     #menu {
@@ -315,15 +340,3 @@ nav li:nth-child(6) a {
     }
 }
 
-/* Nexus 4 landscape */
-@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
-    #menu {
-        width: 80%;
-    }
-
-    .menuitem {
-        width: 27%;
-        margin: 3%;
-        font-size: 1.3em;
-    }
-}
