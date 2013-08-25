@@ -1,3 +1,25 @@
+body {
+    background-color: #494949;
+}
+
+
+/* Centrage vertical du menu */
+.mainContainer {
+    position: absolute;
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.mainContainer .vCenter {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
 /* On applique box-sizing: border-box à tous les éléments pour faciliter le redimensionnement des objets */
 * {
     padding: 0;
@@ -8,37 +30,300 @@
     box-sizing: border-box;
 }
 
-/* Centrage du menu de navigation */
-nav {
+/* Centrage horizontal du menu de navigation */
+#menu {
+    text-align: center;
+    display: inline;
     width: 90%;
     margin: 50px auto;
 }
 
 /* Suppression des boutons de la liste */
-nav ul {
+#menu ul {
     list-style: none;
     overflow: hidden;
+    margin: 0;
 }
 
-nav li a {
+.menuitem {
     display: block;
     float: left;
-    width: 16.6%;
+    width: 14.5%;
     padding: 10px;
 
     background: #444;
-    border-right: 1px solid #fff;
+    margin: 15px;
 
     color: #fff;
-    font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+    font: 12px 'Oswald', Helvetica, Verdana, Arial, sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -o-border-radius: 7px;
+    -ms-border-radius: 7px;
+    border-radius: 7px;
+
+    /* Transitions */
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    transition: background 0.5s ease;
 }
 
-/* SMALL */
-nav small {
-    color: #aaa;
-    font: 100 11px/1 Helvetica, Verdana, Arial, sans-serif;
-    text-transform: none;
+a.menuitem:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Couleurs des liens */
+nav li:nth-child(1) a:hover {
+    background-color: #7764c5;
+}
+
+nav li:nth-child(1) a {
+    background-color: #a186ff;
+}
+
+nav li:nth-child(2) a:hover {
+    background-color: #4cc5b0;
+}
+
+nav li:nth-child(2) a {
+    background-color: #5effe5;
+}
+
+nav li:nth-child(3) a:hover {
+    background-color: #c57b4a;
+}
+
+nav li:nth-child(3) a {
+    background-color: #ffa659;
+}
+
+nav li:nth-child(4) a:hover {
+    background-color: #468cc5;
+}
+
+nav li:nth-child(4) a {
+    background-color: #5cb4ff;
+}
+
+nav li:nth-child(5) a:hover {
+    background-color: #c5ba16;
+}
+
+nav li:nth-child(5) a {
+    background-color: #f4e919;
+}
+
+nav li:nth-child(6) a:hover {
+    background-color: #c56065;
+}
+
+nav li:nth-child(6) a {
+    background-color: #ff7a85;
+}
+
+/* ************* */
+/* Media queries */
+/* ************* */
+
+/* HDTV portrait */
+@media only screen and (max-width : 1080px) and (orientation:portrait) , only screen and (max-device-width : 1080px) and (orientation:portrait) {
+    #menu {
+        width: 66%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 2em;
+    }
+}
+
+/* HDTV landscape */
+@media only screen and (max-width : 1920px) and (orientation:landscape) , only screen and (max-device-width : 1920px) and (orientation:landscape) {
+    #menu {
+        width: 60%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 2%;
+        font-size: 2em;
+    }
+}
+
+/* WideScreen portrait */
+@media only screen and (max-width : 800px) and (orientation:portrait) , only screen and (max-device-width : 800px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 1.5em;
+    }
+}
+
+/* WideScreen landscape */
+@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+    #menu {
+        width: 80%;
+    }
+
+    .menuitem {
+        width: 27%;
+        margin: 3%;
+        font-size: 2em;
+    }
+}
+
+/* HD Tablet portrait */
+@media only screen and (max-width : 768px) and (orientation:portrait) , only screen and (max-device-width : 768px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 2em;
+    }
+}
+
+
+/* HD Tablet landscape */
+@media only screen and (max-width : 1024px) and (orientation:landscape) , only screen and (max-device-width : 1024) and (orientation:landscape) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 4%;
+        font-size: 2em;
+    }
+}
+
+/* Small Tablet portrait */
+@media only screen and (max-width : 600px) and (orientation:portrait) , only screen and (max-device-width : 600px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 2em;
+    }
+}
+
+/* Small Tablet landscape */
+@media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 4%;
+        font-size: 2em;
+    }
+}
+
+/* Middle Phone portrait */
+@media only screen and (max-width : 480px) and (orientation:portrait) , only screen and (max-device-width : 480) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 2em;
+    }
+}
+
+/* Middle Phone landscape */
+@media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 4%;
+        font-size: 2em;
+    }
+}
+
+/* Small Phone portrait */
+@media only screen and (max-width : 320px) and (orientation:portrait) , only screen and (max-device-width : 320px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 1.3em;
+    }
+}
+
+/* Small Phone landscape */
+@media only screen and (max-width : 480px) and (orientation:landscape) , only screen and (max-device-width : 480px) and (orientation:landscape) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 4%;
+        font-size: 1.3em;
+    }
+}
+
+/* iPhone5 landscape */
+@media only screen and (max-width : 568px) and (orientation:landscape) , only screen and (max-device-width : 568px) and (orientation:landscape) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 25%;
+        margin: 4%;
+        font-size: 1.3em;
+    }
+}
+
+/* Nexus 4 portrait */
+@media only screen and (max-width : 768px) and (orientation:portrait) , only screen and (max-device-width : 768px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 1.3em;
+    }
+}
+
+/* Nexus 4 landscape */
+@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+    #menu {
+        width: 80%;
+    }
+
+    .menuitem {
+        width: 27%;
+        margin: 3%;
+        font-size: 1.3em;
+    }
 }
