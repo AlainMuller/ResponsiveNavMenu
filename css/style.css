@@ -141,7 +141,7 @@ nav li:nth-child(6) a {
 /* ************* */
 
 /* HDTV landscape */
-@media only screen and (min-width : 1281px) and (orientation:landscape) {
+@media only screen and (min-width : 1281px) and (orientation:landscape), only screen and (min-device-width : 1281px) and (orientation:landscape) {
     #menu {
         width: 60%;
     }
@@ -176,7 +176,7 @@ nav li:nth-child(6) a {
 }
 
 /* WideScreen landscape */
-@media only screen and (min-width : 801px) and (orientation:landscape) {
+@media only screen and (min-width : 801px) and (orientation:landscape), only screen and (min-device-width : 801px) and (orientation:landscape) {
     #menu {
         width: 80%;
     }
@@ -331,20 +331,33 @@ nav li:nth-child(6) a {
     .menuitem {
         width: 40% !important;
         margin: 5% !important;
-        font-size: 1em !important;
+        font-size: 0.8em !important;
     }
 }
 
 /* Very Old Phone landscape */
 @media only screen and (max-width : 320px) and (orientation:landscape) , only screen and (max-device-width : 320px) and (orientation:landscape) {
     #menu {
-        width: 90% !important;
+        width: 95% !important;
+    }
+
+    .menuitem {
+        width: 29% !important;
+        margin: 2% !important;
+        font-size: 0.6em !important;
+    }
+}
+
+/* Very Very Old Phone portrait */
+@media only screen and (max-width : 240px) and (orientation:landscape) , only screen and (max-device-width : 240px) and (orientation:landscape) {
+    #menu {
+        width: 95% !important;
     }
 
     .menuitem {
         width: 27% !important;
         margin: 3% !important;
-        font-size: 0.8em !important;
+        font-size: 0.5em !important;
     }
 }
 
