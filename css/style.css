@@ -148,7 +148,7 @@ nav li:nth-child(6) a {
 
     .menuitem {
         height: 6em;
-        width: 25%;
+        width: 28%;
         margin: 2%;
         font-size: 2em;
     }
@@ -296,26 +296,39 @@ nav li:nth-child(6) a {
 /* Small Phone portrait */
 @media only screen and (max-width : 320px) and (orientation:portrait) , only screen and (max-device-width : 320px) and (orientation:portrait) {
     #menu {
-        width: 90%;
-    }
-
-    .menuitem {
-        width: 40%;
-        margin: 5%;
-        font-size: 1.3em;
-    }
-}
-
-/* Very Old Phone portrait */
-@media only screen and (max-width : 240px) and (orientation:portrait) , only screen and (max-device-width : 240px) and (orientation:portrait) {
-    #menu {
-        width: 90%;
+        width: 95% !important;
     }
 
     .menuitem {
         width: 40% !important;
         margin: 5% !important;
         font-size: 1em !important;
+    }
+}
+
+/* Very Old Phone portrait */
+@media only screen and (max-width : 240px) and (orientation:portrait) , only screen and (max-device-width : 240px) and (orientation:portrait) {
+    #menu {
+        width: 95% !important;
+    }
+
+    .menuitem {
+        width: 40% !important;
+        margin: 5% !important;
+        font-size: 1em !important;
+    }
+}
+
+/* Very Old Phone landscape */
+@media only screen and (max-width : 320px) and (orientation:landscape) , only screen and (max-device-width : 320px) and (orientation:landscape) {
+    #menu {
+        width: 90% !important;
+    }
+
+    .menuitem {
+        width: 27% !important;
+        margin: 3% !important;
+        font-size: 0.8em !important;
     }
 }
 
