@@ -176,7 +176,7 @@ nav li:nth-child(6) a {
 }
 
 /* WideScreen landscape */
-@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+@media only screen and (min-width : 801px) and (orientation:landscape) {
     #menu {
         width: 80%;
     }
@@ -200,6 +200,33 @@ nav li:nth-child(6) a {
         font-size: 1.5em;
     }
 
+}
+
+/* Nexus 4 landscape */
+
+@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
+    #menu {
+        width: 80%;
+    }
+
+    .menuitem {
+        width: 27%;
+        margin: 3%;
+        font-size: 1.3em;
+    }
+}
+
+/* Nexus 4 portrait */
+@media only screen and (max-width : 768px) and (orientation:portrait) , only screen and (max-device-width : 768px) and (orientation:portrait) {
+    #menu {
+        width: 90%;
+    }
+
+    .menuitem {
+        width: 40%;
+        margin: 5%;
+        font-size: 1.3em;
+    }
 }
 
 /* HD Tablet landscape */
@@ -237,7 +264,7 @@ nav li:nth-child(6) a {
     .menuitem {
         width: 25%;
         margin: 4%;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 }
 
@@ -254,18 +281,7 @@ nav li:nth-child(6) a {
     }
 }
 
-/* Middle Phone landscape */
-@media only screen and (max-width : 800px) and (orientation:landscape) , only screen and (max-device-width : 800px) and (orientation:landscape) {
-    #menu {
-        width: 90%;
-    }
-
-    .menuitem {
-        width: 25%;
-        margin: 4%;
-        font-size: 2em;
-    }
-}
+/* Middle Phone landscape = Small Tablet landscape */
 
 /* Middle Phone portrait */
 @media only screen and (max-width : 480px) and (orientation:portrait) , only screen and (max-device-width : 480px) and (orientation:portrait) {
@@ -276,7 +292,7 @@ nav li:nth-child(6) a {
     .menuitem {
         width: 40%;
         margin: 5%;
-        font-size: 2em;
+        font-size: 1.3em;
     }
 }
 
@@ -287,9 +303,9 @@ nav li:nth-child(6) a {
     }
 
     .menuitem {
-        width: 25%;
-        margin: 4%;
-        font-size: 1.3em;
+        width: 25% !important;
+        margin: 3% !important;
+        font-size: 0.7em !important;
     }
 }
 
@@ -345,30 +361,5 @@ nav li:nth-child(6) a {
     }
 }
 
-/* Nexus 4 landscape */
 
-@media only screen and (max-width : 1280px) and (orientation:landscape) , only screen and (max-device-width : 1280px) and (orientation:landscape) {
-    #menu {
-        width: 80%;
-    }
-
-    .menuitem {
-        width: 27%;
-        margin: 3%;
-        font-size: 1.3em;
-    }
-}
-
-/* Nexus 4 portrait */
-@media only screen and (max-width : 768px) and (orientation:portrait) , only screen and (max-device-width : 768px) and (orientation:portrait) {
-    #menu {
-        width: 90%;
-    }
-
-    .menuitem {
-        width: 40%;
-        margin: 5%;
-        font-size: 1.3em;
-    }
-}
 
